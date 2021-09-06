@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jetpackingcompose">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,10 +23,19 @@
         <activity
             android:name=".basic.BasicActivity"
             android:exported="true" />
+
         <activity
             android:name=".basic.MessageActivity"
             android:exported="true" />
+        <activity
+            android:name=".simplelayout.ListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".simplelayout.ScaffoldActivity"
+            android:exported="true" />
 
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
