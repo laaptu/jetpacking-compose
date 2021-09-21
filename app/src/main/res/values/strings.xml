@@ -4,4 +4,6 @@
     <string name="kotlin">"Kotlin"</string>
     <string name="swift">"Swift"</string>
     <string name="ios">"iOS"</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum tortor at erat mollis consequat. Pellentesque leo dui, venenatis id fringilla a, ornare eu felis. Integer sagittis gravida tellus quis semper. Vestibulum eget commodo diam, vel bibendum sapien. Praesent ut elit tincidunt, volutpat mi gravida, luctus orci. Fusce mi massa, egestas vel augue non, aliquet lacinia justo. Sed pulvinar pretium nunc, vitae tempus lectus ultricies mattis. Fusce cursus, lacus quis tincidunt bibendum, lacus urna aliquet massa, non ultricies ante dolor in elit. Praesent tincidunt mauris velit, non dignissim mauris gravida sed. Donec feugiat tortor nulla, quis eleifend massa congue ac. Phasellus cursus vestibulum ex. Donec sagittis maximus lobortis. In et diam orci.</string>
 </resources>
