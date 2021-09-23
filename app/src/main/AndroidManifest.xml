@@ -7,8 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Jetpackingcompose">
+        android:supportsRtl="true">
 
         <activity
             android:name=".MainActivity"
@@ -33,6 +32,15 @@
         <activity
             android:name=".simplelayout.ScaffoldActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".deputy.ListActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".deputy.ApproveScreenActivity"
+            android:exported="true"
+            android:theme="@style/TransparentTheme" />
 
     </application>
 
