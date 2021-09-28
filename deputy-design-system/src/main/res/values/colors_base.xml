@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Main colors start-->
+    <color name="ds_grey_dark">#1E163C</color>
+    <color name="ds_grey_medium">#6C6A72</color>
+    <color name="ds_grey_light">#CCCBD0</color>
+    <color name="ds_grey_lightest">#F9F9FB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_lightened">#1C1C1E</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_white">#50FFFFFF</color>
+    <color name="ds_action_mode_background">#62666D</color>
+
+    <color name="ds_amber">#FFC200</color>
+    <color name="ds_green">#39A937</color>
+    <color name="ds_green_accent">#00827F</color>
+    <color name="ds_red">#DD3030</color>
+    <color name="ds_light_light_gray">#E6E6E8</color>
+    <!--Main colors end-->
+</resources>

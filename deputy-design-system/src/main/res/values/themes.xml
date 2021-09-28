@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+~ Copyright (C) 2019 The Android Open Source Project
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~      http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="DsTheme"
+        parent="DsTheme.Base">
+        <item name="android:navigationBarColor">@color/black</item>
+        <!-- NOTE styles are override in v-23 / v27 -->
+    </style>
+
+    <style name="DsTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Light theme colors-->
+    <style name="DsTheme.Base"
+        parent="Base.MaterialThemeBuilder">
+
+
+        <item name="android:windowLightStatusBar"
+            tools:targetApi="M">true
+        </item>
+
+        <item name="android:windowLightNavigationBar">true</item>
+        <!--Material color attributes -->
+
+        <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
+        <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
+        <!--selection controls.-->
+        <item name="colorPrimary">?deputyTintSecondary</item>
+        <item name="colorPrimaryVariant">?deputyTintSecondary</item>
+        <item name="colorSecondary">?attr/deputyTintAlternativePrimary</item>
+        <item name="colorSecondaryVariant">?deputyTintAlternativeSecondary</item>
+
+        <!--colorBackground appears behind scrollable content and is used for the default window-->
+        <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->
+        <!--and menus. colorError is used to indicate an error state for components such as-->
+        <!--text fields.-->
+        <item name="android:colorBackground">@color/deputy_background_primary</item>
+        <item name="colorSurface">?deputyBackgroundSecondary</item>
+        <item name="colorError">?deputyTextAttentionLabel</item>
+
+        <!--"On" colors define how text, icons and strokes are colored in relation to the surface-->
+        <!--on which they appear.-->
+        <item name="colorOnPrimary">?deputyButtonPrimaryLabel</item>
+        <item name="colorOnSecondary">?deputyButtonSecondaryLabel</item>
+        <item name="colorOnBackground">?deputyTextPrimaryLabel</item>
+        <item name="colorOnSurface">?deputyTextPrimaryLabel</item>
+        <item name="colorOnError">?deputyTextAttentionLabel</item>
+        <item name="inputTextStyle">@style/DSInputText</item>
+        <item name="android:textColorHighlight">?deputyFillSecondary</item>
+    </style>
+
+
+    <!--Base custom theme which will be shared between both light and dark theme variants-->
+    <style name="Base.MaterialThemeBuilder"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+
+        <!--  Deputy Semantic Colors  -->
+        <item name="deputyTextPrimaryLabel">@color/deputy_text_primary_label</item>
+        <item name="deputyTextSecondaryLabel">@color/deputy_text_secondary_label</item>
+        <item name="deputyTextTertiaryLabel">@color/deputy_text_tertiary_label</item>
+        <item name="deputyTextAttentionLabel">@color/deputy_text_attention_label</item>
+        <item name="deputyTextHighlightLabel">@color/deputy_text_highlight_label</item>
+        <item name="deputyTintPrimary">@color/deputy_tint_primary</item>
+        <item name="deputyTintSecondary">@color/deputy_tint_secondary</item>
+        <item name="deputyTintAlternativePrimary">@color/deputy_tint_alternative_primary</item>
+        <item name="deputyTintAlternativeSecondary">@color/deputy_tint_alternative_secondary</item>
+        <item name="deputyTintInactive">@color/deputy_tint_inactive</item>
+        <item name="deputyBackgroundPrimary">@color/deputy_background_primary</item>
+        <item name="deputyBackgroundSecondary">@color/deputy_background_secondary</item>
+        <item name="deputyBackgroundTertiary">@color/deputy_background_tertiary</item>
+        <item name="deputyBackgroundQuaternary">@color/deputy_background_quaternary</item>
+        <item name="deputyBackgroundAlternative">@color/deputy_background_alternative</item>
+        <item name="deputyStateSelectionFill">@color/deputy_state_selection_fill</item>
+        <item name="deputyStateSelectionBorder">@color/deputy_state_selection_border</item>
+        <item name="deputyStateAlternativeSelectionFill">@color/deputy_state_alternative_selection_fill</item>
+        <item name="deputyFillPrimary">@color/deputy_fill_primary</item>
+        <item name="deputyFillSecondary">@color/deputy_fill_secondary</item>
+        <item name="deputyFillTertiary">@color/deputy_fill_tertiary</item>
+        <item name="deputyFillQuaternary">@color/deputy_fill_quaternary</item>
+        <item name="deputyFillBanners">@color/deputy_fill_banners</item>
+        <item name="deputyTabBarSecondaryInactiveTint">@color/deputy_tab_bar_secondary_inactive_tint</item>
+        <item name="deputyTabBarActiveTint">@color/deputy_tab_bar_active_tint</item>
+        <item name="deputyTabBarActiveLabel">@color/deputy_tab_bar_active_label</item>
+        <item name="deputyButtonPrimaryLabel">@color/deputy_button_primary_label</item>
+        <item name="deputyButtonPrimaryBackground">@color/deputy_button_primary_background</item>
+        <item name="deputyButtonDisabledPrimaryBackground">@color/deputy_button_disabled_primary_background</item>
+        <item name="deputyButtonSecondaryLabel">@color/deputy_button_secondary_label</item>
+        <item name="deputyButtonSecondaryBackground">@color/deputy_button_secondary_background</item>
+        <item name="deputyButtonDisabledLabel">@color/deputy_button_disabled_label</item>
+        <item name="deputyButtonDisabledBackground">@color/deputy_button_disabled_background</item>
+        <item name="deputyButtonMagicLabel">@color/deputy_button_magic_label</item>
+        <item name="deputyButtonMagicBackground">@color/deputy_button_magic_background</item>
+        <item name="deputyShiftButtonStartPrimaryBg">@color/deputy_shift_button_start_primary_bg</item>
+        <item name="deputyShiftButtonStartPrimaryLabel">@color/deputy_shift_button_start_primary_label</item>
+        <item name="deputyShiftButtonStartSecondaryBg">@color/deputy_shift_button_start_secondary_bg</item>
+        <item name="deputyShiftButtonStartSecondaryLabel">@color/deputy_shift_button_start_secondary_label</item>
+        <item name="deputyShiftButtonEndPrimaryBg">@color/deputy_shift_button_end_primary_bg</item>
+        <item name="deputyShiftButtonEndPrimaryLabel">@color/deputy_shift_button_end_primary_label</item>
+        <item name="deputyShiftButtonEndSecondaryBg">@color/deputy_shift_button_end_secondary_bg</item>
+        <item name="deputyShiftButtonEndSecondaryLabel">@color/deputy_shift_button_end_secondary_label</item>
+        <item name="deputySeparatorPrimary">@color/deputy_separator_primary</item>
+        <item name="deputySeparatorSecondary">@color/deputy_separator_secondary</item>
+        <item name="deputySchedulingPublished">@color/deputy_scheduling_published</item>
+        <item name="deputySchedulingPublishedPendingTint">@color/deputy_scheduling_published_pending_tint</item>
+        <item name="deputySchedulingPublishedApprovedTint">@color/deputy_scheduling_published_approved_tint</item>
+        <item name="deputySchedulingTagLabel">@color/deputy_scheduling_tag_label</item>
+        <item name="deputySchedulingUnpublishedTint">@color/deputy_scheduling_unpublished_tint</item>
+        <item name="deputySchedulingEmpty">@color/deputy_scheduling_empty</item>
+        <item name="deputySchedulingHighlightFill">@color/deputy_scheduling_highlight_fill</item>
+        <item name="deputySchedulingOpenShift">@color/deputy_scheduling_open_shift</item>
+        <item name="deputySchedulingActive">@color/deputy_scheduling_active</item>
+        <item name="deputySchedulingScheduled">@color/deputy_scheduling_scheduled</item>
+        <item name="deputySchedulingBreak">@color/deputy_scheduling_break</item>
+        <item name="deputySchedulingLate">@color/deputy_scheduling_late</item>
+        <item name="deputyOtherFills1">@color/deputy_other_fills1</item>
+        <item name="deputyOtherFills1Bg">@color/deputy_other_fills1_bg</item>
+        <item name="deputyOtherFills2">@color/deputy_other_fills2</item>
+        <item name="deputyOtherFills2Bg">@color/deputy_other_fills2_bg</item>
+        <item name="deputyOtherFills3">@color/deputy_other_fills3</item>
+        <item name="deputyOtherFills3Bg">@color/deputy_other_fills3_bg</item>
+        <item name="deputyOtherFills4">@color/deputy_other_fills4</item>
+        <item name="deputyOtherFills4Bg">@color/deputy_other_fills4_bg</item>
+        <item name="deputyOtherFills5">@color/deputy_other_fills5</item>
+        <item name="deputyOtherFills5Bg">@color/deputy_other_fills5_bg</item>
+        <item name="deputyOtherFills6">@color/deputy_other_fills6</item>
+        <item name="deputyOtherFills6Bg">@color/deputy_other_fills6_bg</item>
+        <item name="deputyOtherFills7">@color/deputy_other_fills7</item>
+        <item name="deputyOtherFills7Bg">@color/deputy_other_fills7_bg</item>
+        <item name="deputyOtherFills8">@color/deputy_other_fills8</item>
+        <item name="deputyOtherFills8Bg">@color/deputy_other_fills8_bg</item>
+        <item name="deputyTooltipBackground">@color/deputy_tooltip_background</item>
+        <item name="deputyTooltipLabel">@color/deputy_tooltip_label</item>
+        <item name="deputyBackgroundInvertedRoyalBlue9">@color/deputy_background_inverted_royal_blue_9</item>
+        <item name="deputyFillInvertedRoyalBlue9">@color/deputy_fill_inverted_royal_blue_9</item>
+
+        <item name="deputyTextAppearanceTitle1">@style/TextAppearance.DsTheme.Title1</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds"
+            tools:targetApi="lollipop">true
+        </item>
+        <item name="android:navigationBarColor">?deputyBackgroundPrimary</item>
+        <item name="android:windowBackground">?deputyBackgroundPrimary</item>
+        <item name="android:statusBarColor"
+            tools:targetApi="lollipop">?colorSurface
+        </item>
+
+        <item name="android:navigationBarDividerColor"
+            tools:ignore="NewApi">?deputySeparatorPrimary
+        </item>
+        <item name="callOutColor">@color/ds_green_accent</item>
+        <item name="callOutTextColor">@color/ds_white_text</item>
+        <item name="colorNeutral">@color/ds_grey_lightest</item>
+        <item name="textColorNeutralHighlight">?deputyButtonSecondaryLabel</item>
+        <item name="textColorPrimarySelected">@color/ds_white_text</item>
+
+        <item name="materialButtonStyle">@style/DsButton.Primary</item>
+        <item name="materialAlertDialogTheme">@style/DsDialogTheme</item>
+        <item name="android:textViewStyle">@style/Widget.DsTheme.TextView</item>
+        <item name="android:datePickerStyle"
+            tools:targetApi="lollipop">@style/DsDatePicker
+        </item>
+        <item name="android:timePickerStyle"
+            tools:targetApi="lollipop">@style/DsTimePicker
+        </item>
+        <item name="textInputStyle">@style/DSInputText</item>
+        <item name="snackbarStyle">@style/DeputySnackbarStyle</item>
+        <item name="snackbarTextViewStyle">@style/DeputySnackbarTextViewStyle</item>
+        <item name="toolbarStyle">@style/DsToolbar</item>
+        <item name="android:actionButtonStyle">@style/DeputyActionButtonStyle</item>
+        <item name="android:indeterminateTint">?deputyTintAlternativePrimary</item>
+
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back</item>
+
+        <item name="cardViewStyle">@style/DsCardStyle</item>
+
+        <item name="actionMenuTextColor">?deputyTextSecondaryLabel</item>
+        <item name="actionMenuTextAppearance">@style/Widget.MenuTextStyle</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/ds_action_mode_background</item>
+        <item name="android:listDivider">@drawable/list_divider</item>
+        <item name="bottomSheetDialogTheme">@style/DsBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="DeputySnackbarStyle" parent="">
+        <item name="backgroundTint">?deputyFillSecondary</item>
+    </style>
+
+    <style name="DeputySnackbarTextViewStyle">
+        <item name="android:textColor">?deputyTextPrimaryLabel</item>
+    </style>
+
+    <style name="DsBottomSheetDialogTheme"
+        parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/DsBottomSheetDialogStyle</item>
+    </style>
+
+    <style name="DsBottomSheetDialogStyle"
+        parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/DsBottomSheetShapeAppearance</item>
+    </style>
+
+    <style name="DsBottomSheetShapeAppearance"
+        parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="DsDialogTheme"
+        parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarNegativeButtonStyle">@style/DsDialogNegativeButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/DsDialogNegativeButtonStyle</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialAlertDialog.Rounded</item>
+    </style>
+
+    <style name="DsDialogTheme.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialAlertDialog.Rounded"
+        parent="">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="DsDialogNegativeButtonStyle"
+        parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?deputyTextSecondaryLabel</item>
+    </style>
+
+    <style name="DsDialogNeutralButtonStyle"
+        parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?deputyTextSecondaryLabel</item>
+    </style>
+
+    <style name="DSInputText"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">?deputyTextHighlightLabel</item>
+    </style>
+    <style name="DsTheme.NoActionBar.Transparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+</resources>

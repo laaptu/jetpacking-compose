@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="DsTheme.PrimarySurface" parent="DsTheme.PrimarySurfaceBase"/>
+
+    <style name="DsTheme.PrimarySurfaceBase">
+        <item name="android:windowBackground">?colorPrimarySurface</item>
+        <item name="android:statusBarColor">?colorPrimarySurface</item>
+        <item name="toolbarNavigationButtonStyle">@style/PrimarySurfaceTitleButtonStyle</item>
+        <item name="toolbarStyle">@style/DsToolbar.PrimarySurface</item>
+    </style>
+
+    <style name="DsToolbar.PrimarySurface">
+        <item name="android:background">?colorPrimarySurface</item>
+        <item name="titleTextAppearance">@style/PrimarySurfaceToolbarTitleTextAppearance</item>
+        <item name="titleTextColor">?colorOnPrimarySurface</item>
+        <item name="android:elevation">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="PrimarySurfaceToolbarTitleTextAppearance" parent="DsToolbarTitleTextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="PrimarySurfaceTitleButtonStyle" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="tint">@color/white</item>
+    </style>
+</resources>

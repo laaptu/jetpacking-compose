@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="20dp"
+    android:viewportWidth="16"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M6,0L5,1L1,1C0.448,1 0,1.448 0,2C0,2.552 0.448,3 1,3L15,3C15.552,3 16,2.552 16,2C16,1.448 15.552,1 15,1L11,1L10,0L6,0ZM1,5L1,18C1,19.1 1.9,20 3,20L13,20C14.1,20 15,19.1 15,18L15,5L1,5ZM5,7C5.552,7 6,7.448 6,8L6,17C6,17.552 5.552,18 5,18C4.448,18 4,17.552 4,17L4,8C4,7.448 4.448,7 5,7ZM11,7C11.552,7 12,7.448 12,8L12,17C12,17.552 11.552,18 11,18C10.448,18 10,17.552 10,17L10,8C10,7.448 10.448,7 11,7Z"
+        android:strokeWidth="1"
+        android:fillColor="@color/ds_toolbar_icon"
+        android:fillType="nonZero"
+        android:strokeColor="#00000000"/>
+</vector>

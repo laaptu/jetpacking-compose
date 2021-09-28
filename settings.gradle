@@ -1,2 +1,4 @@
 include ':app'
-rootProject.name='JetPack'
+include ':design-system-compose'
+include ':deputy-design-system'
+rootProject.name = 'JetPack'

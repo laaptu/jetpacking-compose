@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="text" format="string"/>
+    <attr name="selected" format="boolean" />
+    <attr name="icon" format="reference" />
+
+    <declare-styleable name="DSTheme">
+        <attr name="callOutColor" format="reference|color"/>
+        <attr name="callOutTextColor" format="reference|color"/>
+        <attr name="colorNeutral" format="reference|color"/>
+        <attr name="textColorNeutralHighlight" format="reference|color"/>
+        <attr name="textColorPrimarySelected" format="reference|color"/>
+        <attr name="inputTextStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SocialButton">
+        <attr name="customText" format="string"/>
+        <attr name="customTextColor" format="color"/>
+        <attr name="customIcon" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="EndlessProgressBar">
+        <attr name="autoStart" format="boolean"/>
+        <attr name="expectedProgressTime" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SelectableChip">
+        <attr name="text"/>
+        <attr name="selected"/>
+    </declare-styleable>
+
+    <declare-styleable name="SelectedChip">
+        <attr name="text"/>
+    </declare-styleable>
+
+    <declare-styleable name="SelectableChipRecycler">
+        <attr name="spacingStart" format="dimension"/>
+        <attr name="spacingEnd" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PageIndicator">
+        <attr name="viewPager" format="reference" />
+        <attr name="selectedIndicatorColor" format="color"/>
+        <attr name="unselectedIndicatorColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputChip">
+        <attr name="text"/>
+        <attr name="canRemove" format="boolean"/>
+        <attr name="icon"/>
+        <attr name="iconSize" format="dimension" />
+        <attr name="selected"/>
+        <attr name="iconBackground" format="boolean"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputText">
+        <attr name="maxLines" format="integer"/>
+        <attr name="allowKeyboardEnter" format="boolean"/>
+        <attr name="errorEnabled" format="boolean"/>
+        <attr name="dismissKeyboardOnEnter" format="boolean"/>
+        <attr name="focusAndShowKeyboard" format="boolean"/>
+        <attr name="errorTextDisplayDelay" format="integer"/>
+        <attr name="sentenceCase" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SearchInput">
+        <attr name="hint" format="string"/>
+        <attr name="icon"/>
+        <attr name="icon_padding" format="float"/>
+    </declare-styleable>
+
+</resources>

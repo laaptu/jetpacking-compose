@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="ds_button_corner">8dp</dimen>
+    <dimen name="ds_button_border_width">1dp</dimen>
+    <dimen name="ds_button_horizontal_padding">16dp</dimen>
+    <dimen name="ds_toolbar_elevation">4dp</dimen>
+
+    <dimen name="ds_divider_height">1dp</dimen>
+
+    <dimen name="ds_horizontal_progress_bar_height">2dp</dimen>
+    <dimen name="ds_horizontal_progress_bar_corner">3dp</dimen>
+
+    <dimen name="ds_call_to_action_padding">16dp</dimen>
+    <dimen name="selectable_chip_spacing">8dp</dimen>
+
+    <dimen name="page_padding">16dp</dimen>
+    <dimen name="page_padding_negative">-16dp</dimen>
+
+    <dimen name="dialog_padding">24dp</dimen>
+
+    <dimen name="input_chip_padding_start">16dp</dimen>
+    <dimen name="input_chip_padding_end">16dp</dimen>
+    <dimen name="input_chip_padding_top">8dp</dimen>
+    <dimen name="input_chip_padding_bottom">8dp</dimen>
+
+    <dimen name="input_chip_icon_size">24dp</dimen>
+    <dimen name="input_chip_icon_padding">4dp</dimen>
+
+    <dimen name="card_corner_radius">16dp</dimen>
+
+    <dimen name="bottom_nav_icon_size">30dp</dimen>
+    <dimen name="design_bottom_navigation_height"
+        tools:override="true">60dp
+    </dimen>
+
+    <!-- Skeleton -->
+    <dimen name="skeleton_user_avatar_size">48dp</dimen>
+    <dimen name="skeleton_height_medium">60dp</dimen>
+    <dimen name="skeleton_radius_medium">16dp</dimen>
+    <dimen name="skeleton_height_small">12dp</dimen>
+    <dimen name="skeleton_radius_small">6dp</dimen>
+    <dimen name="skeleton_card_height">320dp</dimen>
+
+    <!-- Search Input -->
+    <dimen name="search_input_default_icon_padding">8dp</dimen>
+
+    <!-- Retry button -->
+    <dimen name="ds_retry_error_icon_size">16dp</dimen>
+
+    <!-- Info View -->
+    <dimen name="info_view_min_width">140dp</dimen>
+    <dimen name="info_view_min_height">111dp</dimen>
+
+</resources>

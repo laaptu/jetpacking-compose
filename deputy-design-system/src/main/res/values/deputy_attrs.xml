@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+~ Copyright (C) 2019 The Android Open Source Project
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~      http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+
+<resources>
+    <attr name="deputyTextPrimaryLabel" format="color" />
+    <attr name="deputyTextSecondaryLabel" format="color" />
+    <attr name="deputyTextTertiaryLabel" format="color" />
+    <attr name="deputyTextAttentionLabel" format="color" />
+    <attr name="deputyTextHighlightLabel" format="color" />
+    <attr name="deputyTintPrimary" format="color" />
+    <attr name="deputyTintSecondary" format="color" />
+    <attr name="deputyTintAlternativePrimary" format="color" />
+    <attr name="deputyTintAlternativeSecondary" format="color" />
+    <attr name="deputyTintInactive" format="color" />
+    <attr name="deputyBackgroundPrimary" format="color" />
+    <attr name="deputyBackgroundSecondary" format="color" />
+    <attr name="deputyBackgroundTertiary" format="color" />
+    <attr name="deputyBackgroundQuaternary" format="color" />
+    <attr name="deputyBackgroundAlternative" format="color" />
+    <attr name="deputyStateSelectionFill" format="color" />
+    <attr name="deputyStateSelectionBorder" format="color" />
+    <attr name="deputyStateAlternativeSelectionFill" format="color" />
+    <attr name="deputyFillPrimary" format="color" />
+    <attr name="deputyFillSecondary" format="color" />
+    <attr name="deputyFillTertiary" format="color" />
+    <attr name="deputyFillQuaternary" format="color" />
+    <attr name="deputyFillBanners" format="color" />
+    <attr name="deputyTooltipBackground" format="color" />
+    <attr name="deputyTooltipLabel" format="color" />
+    <attr name="deputyBackgroundInvertedRoyalBlue9" format="color" />
+    <attr name="deputyFillInvertedRoyalBlue9" format="color" />
+
+    <!-- Buttons -->
+    <attr name="deputyButtonPrimaryLabel" format="color" />
+    <attr name="deputyButtonPrimaryBackground" format="color" />
+    <attr name="deputyButtonDisabledPrimaryBackground" format="color" />
+    <attr name="deputyButtonSecondaryLabel" format="color" />
+    <attr name="deputyButtonSecondaryBackground" format="color" />
+    <attr name="deputyButtonDisabledLabel" format="color" />
+    <attr name="deputyButtonDisabledBackground" format="color" />
+    <attr name="deputyButtonMagicLabel" format="color" />
+    <attr name="deputyButtonMagicBackground" format="color" />
+
+    <!-- Shift buttons -->
+    <attr name="deputyShiftButtonStartPrimaryBg" format="color" />
+    <attr name="deputyShiftButtonStartPrimaryLabel" format="color" />
+    <attr name="deputyShiftButtonStartSecondaryBg" format="color" />
+    <attr name="deputyShiftButtonStartSecondaryLabel" format="color" />
+    <attr name="deputyShiftButtonEndPrimaryBg" format="color" />
+    <attr name="deputyShiftButtonEndPrimaryLabel" format="color" />
+    <attr name="deputyShiftButtonEndSecondaryBg" format="color" />
+    <attr name="deputyShiftButtonEndSecondaryLabel" format="color" />
+
+    <!-- Tab Bar / BottonNavigationView -->
+    <attr name="deputyTabBarSecondaryInactiveTint" format="color" />
+    <attr name="deputyTabBarActiveTint" format="color" />
+    <attr name="deputyTabBarActiveLabel" format="color" />
+
+    <!--  Separators  -->
+    <attr name="deputySeparatorPrimary" format="color" />
+    <attr name="deputySeparatorSecondary" format="color" />
+
+    <!--  Scheduling  -->
+    <attr name="deputySchedulingPublished" format="color" />
+    <attr name="deputySchedulingPublishedPendingTint" format="color" />
+    <attr name="deputySchedulingPublishedApprovedTint" format="color" />
+    <attr name="deputySchedulingTagLabel" format="color" />
+    <attr name="deputySchedulingUnpublishedTint" format="color" />
+    <attr name="deputySchedulingEmpty" format="color" />
+    <attr name="deputySchedulingHighlightFill" format="color" />
+    <attr name="deputySchedulingOpenShift" format="color" />
+    <attr name="deputySchedulingActive" format="color" />
+    <attr name="deputySchedulingScheduled" format="color" />
+    <attr name="deputySchedulingBreak" format="color" />
+    <attr name="deputySchedulingLate" format="color" />
+
+    <!--  Other Fills  -->
+    <attr name="deputyOtherFills1" format="color" />
+    <attr name="deputyOtherFills1Bg" format="color" />
+    <attr name="deputyOtherFills2" format="color" />
+    <attr name="deputyOtherFills2Bg" format="color" />
+    <attr name="deputyOtherFills3" format="color" />
+    <attr name="deputyOtherFills3Bg" format="color" />
+    <attr name="deputyOtherFills4" format="color" />
+    <attr name="deputyOtherFills4Bg" format="color" />
+    <attr name="deputyOtherFills5" format="color" />
+    <attr name="deputyOtherFills5Bg" format="color" />
+    <attr name="deputyOtherFills6" format="color" />
+    <attr name="deputyOtherFills6Bg" format="color" />
+    <attr name="deputyOtherFills7" format="color" />
+    <attr name="deputyOtherFills7Bg" format="color" />
+    <attr name="deputyOtherFills8" format="color" />
+    <attr name="deputyOtherFills8Bg" format="color" />
+
+    <attr name="deputyTextAppearanceTitle1" format="reference" />
+
+
+</resources>

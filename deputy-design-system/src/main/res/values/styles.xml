@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Widget.MenuTextStyle"
+        parent="TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" />
+
+    <style name="DeputyActionButtonStyle">
+        <item name="android:minWidth">40dp</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:drawableTint"
+            tools:targetApi="23">?deputyTintPrimary
+        </item>
+        <item name="android:drawableTintMode"
+            tools:targetApi="23">src_atop
+        </item>
+    </style>
+
+    <style name="DsTheme.EditBase">
+        <item name="android:windowDrawsSystemBarBackgrounds"
+            tools:targetApi="lollipop">true
+        </item>
+        <item name="toolbarStyle">@style/DsToolbar.Edit</item>
+    </style>
+
+    <style name="DsTheme.BlueStatusBar"
+        parent="DsTheme.EditBase">
+        <item name="android:statusBarColor">?colorPrimarySurface</item>
+        <item name="android:windowLightStatusBar"
+            tools:targetApi="m">false
+        </item>
+    </style>
+
+    <style name="DsTheme.TranslucentStatusBar"
+        parent="DsTheme.EditBase">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Widget.DsTheme.TextView"
+        parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">?textAppearanceBody2</item>
+        <item name="android:textColor">?deputyTextPrimaryLabel</item>
+    </style>
+
+    <style name="DsTheme.Edit"
+        parent="DsTheme.EditBase" />
+
+    <!--If you don't need elevation on your screen for some reason please override it by using android:elevation="0dp"-->
+    <style name="DsToolbar"
+        parent="Widget.MaterialComponents.Toolbar.Surface">
+        <item name="android:layout_height">?android:attr/actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:elevation"
+            tools:targetApi="lollipop">@dimen/ds_toolbar_elevation
+        </item>
+        <item name="titleTextAppearance">@style/DsToolbarTitleTextAppearance</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+
+    <style name="ToolbarTheme"
+        parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">?deputyTextSecondaryLabel</item>
+    </style>
+
+    <style name="DsToolbar.Edit">
+        <item name="navigationIcon">@drawable/ic_close_toolbar</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="DsToolbarTitleTextAppearance"
+        parent="DsTextAppearance.Headline6">
+        <item name="android:textColor">?deputyTextPrimaryLabel</item>
+    </style>
+
+    <style name="DsFullScreenDialogToolbar"
+        parent="DsToolbar">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="DsFullScreenDialogStyle"
+        parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!--    &lt;!&ndash; Additionally if you want animations when dialog opening &ndash;&gt;
+            <item name="android:windowEnterAnimation">@anim/slide_up</item>
+            <item name="android:windowExitAnimation">@anim/slide_down</item>-->
+    </style>
+
+    <style name="DsTabLayout"
+        parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="tabTextColor">?deputyTextSecondaryLabel</item>
+        <item name="tabSelectedTextColor">?deputyTextSecondaryLabel</item>
+        <item name="tabIndicatorColor">?deputyStateSelectionBorder</item>
+        <item name="tabIndicatorHeight">2dp</item>
+    </style>
+
+    <style name="DsBottomNavigation">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemIconTint">@color/ds_nav_icon_color</item>
+        <item name="itemTextColor">@color/ds_nav_text_color</item>
+        <item name="itemIconSize">@dimen/bottom_nav_icon_size</item>
+        <item name="itemTextAppearanceInactive">@style/DSBottomNavigationTitle</item>
+        <item name="itemTextAppearanceActive">@style/DSBottomNavigationTitle.Active</item>
+        <item name="itemBackground">@drawable/bg_bottom_navigation</item>
+
+    </style>
+
+    <style name="DSBottomNavigationTitle"
+        parent="DsTextAppearance.Caption" />
+
+    <style name="DSBottomNavigationTitle.Active" />
+
+    <!--This style makes dialog width always to take 90% of screen width-->
+    <style name="DsDialogFullWidth"
+        parent="DsTheme">
+        <item name="windowMinWidthMajor">90%</item>
+        <item name="windowMinWidthMinor">90%</item>
+    </style>
+
+    <!--Text styles start-->
+    <style name="DsTextAppearance.Headline6"
+        parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DsTextAppearance.Headline7"
+        parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DsTextAppearance.Subtitle1"
+        parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DsTextAppearance.Subtitle2"
+        parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DsTextAppearance.Body2"
+        parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DsTextAppearance.Caption"
+        parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.DsTheme.MaterialCalendarWidget.Date"
+        parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/mcv_text_color</item>
+    </style>
+
+    <!--Text styles end-->
+
+    <!--Buttons styles start-->
+    <style name="DsButton"
+        parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAppearance">@style/TextAppearanceOutlineButton</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="TextAppearanceOutlineButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps"
+            tools:ignore="NewApi">false
+        </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="DsButton.Filled">
+        <!--button with colored background-->
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="DsButton.Primary">
+        <item name="backgroundTint">@color/dsbutton_primary_bg</item>
+        <item name="android:textColor">@color/dsbutton_primary_text</item>
+    </style>
+
+    <style name="DsButton.Filled.Light">
+        <item name="backgroundTint">@color/dsbutton_filled_light_selector_color</item>
+        <item name="android:textColor">?deputyButtonSecondaryLabel</item>
+    </style>
+
+    <style name="DsButton.Ghost">
+        <item name="android:strokeColor">@color/ds_ghost_button_stoke</item>
+    </style>
+
+    <style name="DsButton.Ghost.Light">
+        <item name="android:background">@drawable/bg_light_ghost_button</item>
+        <item name="backgroundTint">@color/ds_ghost_button_stoke</item>
+        <item name="android:textColor">@color/ds_white_text</item>
+    </style>
+
+    <style name="DsButton.Ghost.Light.Empty">
+        <item name="android:background">@color/transparent</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="DsButton.Secondary"
+        parent="DsButton.Filled">
+        <item name="backgroundTint">?deputyButtonSecondaryBackground</item>
+        <item name="android:textColor">?deputyButtonSecondaryLabel</item>
+        <item name="iconTint">?deputyTintPrimary</item>
+    </style>
+
+    <style name="DsButton.Shift.StartUnscheduledShift"
+        parent="DsButton.Filled">
+        <item name="backgroundTint">?deputyShiftButtonStartSecondaryBg</item>
+        <item name="android:textColor">?deputyShiftButtonStartSecondaryLabel</item>
+    </style>
+
+    <style name="DsButton.Shift.StartShift"
+        parent="DsButton.Filled">
+        <item name="backgroundTint">?deputyShiftButtonStartPrimaryBg</item>
+        <item name="android:textColor">?deputyShiftButtonStartPrimaryLabel</item>
+    </style>
+
+    <style name="DsButton.Shift.EndShift"
+        parent="DsButton.Filled">
+        <item name="backgroundTint">?deputyShiftButtonEndSecondaryBg</item>
+        <item name="android:textColor">?deputyShiftButtonEndSecondaryLabel</item>
+    </style>
+
+    <style name="DsButton.Secondary.Empty">
+        <item name="android:background">@color/transparent</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:textColor">?deputyTextHighlightLabel</item>
+    </style>
+
+    <style name="DsButton.Social"
+        parent="DsButton.Secondary">
+        <item name="iconPadding">18dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTintMode">add</item>
+        <item name="iconTint">@android:color/transparent</item>
+    </style>
+
+    <style name="DsButton.Social.Google">
+        <item name="icon">@drawable/ic_google_logo</item>
+    </style>
+
+    <style name="DsButton.Social.Facebook">
+        <item name="icon">@drawable/ic_facebook_logo</item>
+    </style>
+
+    <style name="DsButton.Social.SSO">
+        <item name="icon">@drawable/ic_sso_logo</item>
+    </style>
+
+    <style name="DsButton.Social.Email">
+        <item name="icon">@drawable/ic_baseline_email</item>
+    </style>
+
+    <style name="DsButton.ErrorRetry">
+        <item name="android:background">@drawable/bg_button_error_retry</item>
+        <item name="android:textColor">?deputyTextSecondaryLabel</item>
+        <item name="backgroundTint">@color/ds_ripple_effect</item>
+        <item name="icon">@drawable/ic_retry_error_button</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconTint">?deputyTextSecondaryLabel</item>
+    </style>
+
+    <!--Buttons styles end-->
+
+    <!--Floating Action Button styles start-->
+    <style name="DsFloatingActionButton"
+        parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">?colorPrimaryVariant</item>
+        <item name="tint">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="DsFloatingActionButton.Add">
+        <item name="srcCompat">@drawable/ic_add_white</item>
+    </style>
+
+    <style name="DsFloatingActionButton.Done">
+        <item name="srcCompat">@drawable/ic_done_white</item>
+    </style>
+    <!--Floating Action Button styles end-->
+
+    <!-- TODO [mkpazon] review who are using this, and potentially remove this style as it is being used in different purposes. -->
+    <style name="DsDivider">
+        <item name="android:background">@drawable/list_divider</item>
+        <item name="android:layout_height">@dimen/ds_divider_height</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="DsDatePicker"
+        parent="MaterialAlertDialog.MaterialComponents.Picker.Date.Calendar"
+        tools:targetApi="lollipop">
+        <item name="android:headerBackground">?colorSurface</item>
+        <item name="android:headerDayOfMonthTextAppearance">@style/DsTextAppearance.Subtitle1</item>
+        <item name="android:headerMonthTextAppearance">@style/DsTextAppearance.Subtitle1</item>
+        <item name="android:headerYearTextAppearance">@style/DsTextAppearance.Subtitle1</item>
+    </style>
+
+    <style name="DsTimePicker"
+        parent="@android:style/Widget.Material.Light.TimePicker"
+        tools:targetApi="lollipop">
+        <item name="android:headerBackground">?colorSurface</item>
+        <item name="android:headerTimeTextAppearance">@style/DsTextAppearance.Subtitle1</item>
+        <item name="android:headerAmPmTextAppearance">@style/DsTextAppearance.Subtitle1</item>
+        <item name="android:numbersBackgroundColor">?deputyFillSecondary</item>
+    </style>
+
+    <style name="DsCardStyle"
+        parent="Widget.MaterialComponents.CardView"
+        tools:targetApi="lollipop">
+        <item name="cardBackgroundColor">?deputyBackgroundQuaternary</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+    </style>
+
+    <style name="DsAlertDialog"
+        parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorAccent">?colorPrimaryVariant</item>
+    </style>
+
+    <style name="DsProgressBar"
+        parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/bg_horizontal_progress_bar</item>
+    </style>
+
+    <style name="SelectableChip"
+        parent="DsTextAppearance.Body2">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/selectable_chip_text</item>
+        <item name="android:background">@drawable/selectable_chip_background</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+
+    <style name="SelectedChip"
+        parent="DsTextAppearance.Body2">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">?textColorNeutralHighlight</item>
+        <item name="android:background">@drawable/selected_chip_background</item>
+    </style>
+
+    <style name="PageIndicator">
+
+    </style>
+
+    <style name="PageIndicator.Light">
+        <item name="selectedIndicatorColor">@color/ds_page_indicator_selected_light</item>
+        <item name="unselectedIndicatorColor">@color/ds_page_indicator_unselected_light</item>
+    </style>
+
+    <style name="PageIndicator.Dark">
+        <item name="selectedIndicatorColor">?deputyTintPrimary</item>
+        <item name="unselectedIndicatorColor">?deputyTintInactive</item>
+    </style>
+
+    <style name="DsToolbarText"
+        parent="DsTextAppearance.Subtitle2">
+        <item name="android:textColor">?deputyTextSecondaryLabel</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:background">@color/ds_header_color</item>
+        <item name="android:paddingStart">@dimen/page_padding</item>
+        <item name="android:paddingEnd">@dimen/page_padding</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="DSSearchBar"
+        parent="Widget.AppCompat.EditText">
+        <item name="android:textAppearance">@style/DsTextAppearance.Headline7</item>
+        <item name="android:textColor">?deputyTextSecondaryLabel</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColorHint">?deputyTextSecondaryLabel</item>
+        <item name="hintTextAppearance">@style/DsTextAppearance.Headline7</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="DsStickyHeaderText"
+        parent="DsTextAppearance.Subtitle2">
+        <item name="android:textColor">?deputyTextSecondaryLabel</item>
+    </style>
+
+    <style name="DsCardStyle.InfoView">
+        <item name="android:minWidth">@dimen/info_view_min_width</item>
+        <item name="android:minHeight">@dimen/info_view_min_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">?deputyBackgroundTertiary</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+</resources>

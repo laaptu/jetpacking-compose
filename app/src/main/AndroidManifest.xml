@@ -35,12 +35,13 @@
 
         <activity
             android:name=".deputy.ListActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/DsTheme.NoActionBar"/>
 
         <activity
             android:name=".deputy.ApproveScreenActivity"
             android:exported="true"
-            android:theme="@style/TransparentTheme" />
+            android:theme="@style/DsTheme.NoActionBar.Transparent" />
 
     </application>
 

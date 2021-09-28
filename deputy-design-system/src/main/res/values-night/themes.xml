@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+~ Copyright (C) 2019 The Android Open Source Project
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~      http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+
+<resources xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Light theme colors-->
+    <style name="DsTheme.Base"
+        parent="Base.MaterialThemeBuilder">
+
+        <item name="android:windowLightStatusBar"
+            tools:targetApi="M">false
+        </item>
+        <item name="android:windowLightNavigationBar"
+            tools:ignore="NewApi">false
+        </item>
+
+        <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
+        <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
+        <!--selection controls.-->
+        <item name="colorPrimary">?deputyTintSecondary</item>
+        <item name="colorPrimaryVariant">?deputyTintSecondary</item>
+        <item name="colorSecondary">?deputyTintAlternativePrimary</item>
+        <item name="colorSecondaryVariant">?deputyTintAlternativeSecondary</item>
+
+        <!--colorBackground appears behind scrollable content and is used for the default window-->
+        <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->
+        <!--and menus. colorError is used to indicate an error state for components such as-->
+        <!--text fields.-->
+        <item name="android:colorBackground">@color/deputy_background_primary</item>
+        <item name="colorSurface">?deputyBackgroundSecondary</item>
+        <item name="colorError">@color/ds_color_error</item> <!-- TODO -->
+
+        <!--"On" colors define how text, icons and strokes are colored in relation to the surface-->
+        <!--on which they appear.-->
+        <item name="colorOnPrimary">?deputyButtonPrimaryLabel</item>
+        <item name="colorOnSecondary">?deputyButtonSecondaryLabel</item>
+        <item name="colorOnBackground">?deputyTextPrimaryLabel</item>
+        <item name="colorOnSurface">?deputyTextPrimaryLabel</item>
+        <item name="colorOnError">?deputyTextAttentionLabel</item>
+    </style>
+
+</resources>

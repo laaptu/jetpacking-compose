@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="calendar_label_friday">V</string>
+  <string name="calendar_label_monday">L</string>
+  <string name="calendar_label_saturday">S</string>
+  <string name="calendar_label_sunday">D</string>
+  <string name="calendar_label_thursday">J</string>
+  <string name="calendar_label_tuesday">M</string>
+  <string name="calendar_label_wednesday">M</string>
+  <string name="search_input_hint">Buscar</string>
+</resources>

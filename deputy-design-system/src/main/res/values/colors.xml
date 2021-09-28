@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Material Component Colors-->
+    <color name="ds_color_background_secondary">@color/ds_grey_lightest</color>
+    <color name="ds_color_surface">@color/white</color>
+    <color name="ds_color_error">@color/ds_error_text</color>
+    <color name="ds_color_on_secondary">@color/white</color>
+    <color name="ds_color_on_background">@color/ds_grey_dark</color>
+    <color name="ds_color_on_surface">@color/ds_grey_dark</color>
+    <color name="ds_color_on_error">@color/white</color>
+    <color name="ds_header_color">@color/ds_grey_lightest</color>
+    <!-- Semantic Colors - see https://docs.google.com/spreadsheets/d/19ttzfK_M0pLDvAichr_NI4qgXT8wGJtK27k1JgDu4E0/edit#gid=1998057916 -->
+    <color name="ds_fill_primary">#995D7888</color><!-- 99 == 60% alpha -->
+    <color name="ds_fill_secondary">@color/ds_grey_light</color>
+
+    <color name="ds_tint_alternate">@color/ds_green_accent</color>
+    <color name="ds_text_label_primary">@color/ds_grey_dark</color>
+
+    <!-- Snackbar -->
+    <color name="ds_snackbar_background" app:override="true">@color/ds_grey_dark</color>
+    <color name="ds_snackbar_textcolor" app:override="true">@color/white</color>
+    <!-- Selectable Chip -->
+    <color name="selectable_chip_default">@color/ds_grey_lightest</color>
+    <!-- Date Picker -->
+    <color name="time_picker_clock_bg">@color/ds_grey_lightest</color>
+    <!-- Buttons -->
+    <color name="ds_ghost_button_stoke">@color/ds_grey_light</color>
+
+    <!--Other Colors-->
+    <color name="mcv_text_color">@color/black</color>
+
+    <!-- non design system -->
+    <color name="memo_shared_with_section_header_bg">@color/ds_light_light_gray</color>
+
+    <!-- Toolbar color-->
+    <color name="ds_toolbar_icon">@color/deputy_tint_secondary</color>
+
+</resources>

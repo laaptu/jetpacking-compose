@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Info View -->
+    <dimen name="info_view_min_width">150dp</dimen>
+    <dimen name="info_view_min_height">119dp</dimen>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.deputy.android.ds.views.progressbars.WrappedIndeterminateProgressBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding"
+        android:id="@+id/progress_bar_wrapped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:tint="?colorPrimaryDark"
+        app:mpb_progressStyle="horizontal"
+        app:mpb_showProgressBackground="true"
+        app:mpb_useIntrinsicPadding="false"
+        />
+
+</merge>

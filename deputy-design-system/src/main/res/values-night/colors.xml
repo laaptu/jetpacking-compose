@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Material Component Colors-->
+    <color name="ds_color_background_secondary">@color/black_lightened</color>
+    <color name="ds_color_surface">@color/black_lightened</color>
+    <color name="ds_color_error">@color/ds_error_text</color>
+    <color name="ds_color_on_secondary">@color/white</color>
+    <color name="ds_color_on_background">@color/white</color>
+    <color name="ds_color_on_surface">@color/white</color>
+    <color name="ds_header_color">#303030</color>
+    <!-- Semantic Colors - see https://docs.google.com/spreadsheets/d/19ttzfK_M0pLDvAichr_NI4qgXT8wGJtK27k1JgDu4E0/edit#gid=1998057916 -->
+    <color name="ds_fill_primary">#91A0AB</color>
+    <color name="ds_fill_secondary">#363638</color>
+
+    <color name="ds_tint_alternate">@color/ds_green_accent</color>
+
+    <!-- Snackbar -->
+    <color name="ds_snackbar_background" app:override="true">@color/ds_color_surface</color>
+    <color name="ds_snackbar_textcolor" app:override="true">@color/white</color>
+    <!-- Selectable Chip -->
+    <color name="selectable_chip_default">@color/ds_color_surface</color>
+    <!-- Date Picker -->
+    <color name="time_picker_clock_bg">@color/ds_color_surface</color>
+    <!-- Buttons -->
+    <color name="ds_ghost_button_stoke">#545458</color>
+
+    <!--Other Colors-->
+    <color name="deputy_card_view_activity_background">@color/black</color>
+    <color name="mcv_text_color">@color/white</color>
+
+    <!-- non-design system -->
+    <color name="memo_shared_with_section_header_bg">@color/ds_color_surface</color>
+
+    <!-- Toolbar color--> <!-- TODO drop this eventually. Use deputyIconSecondaryTint. Currently crashes in schedule fragment if we replace it here
+     Uswe-->
+    <color name="ds_toolbar_icon">#CCB7FF</color><!-- 99 == 60% alpha -->
+</resources>

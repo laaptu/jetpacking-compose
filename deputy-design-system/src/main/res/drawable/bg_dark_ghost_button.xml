@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ds_ripple_effect">
+
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ds_ripple_effect" />
+            <stroke
+                android:width="@dimen/ds_button_border_width"
+                android:color="?deputyTintPrimary" />
+            <corners android:radius="@dimen/ds_button_corner" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ds_ghost_button" />
+            <stroke
+                android:width="@dimen/ds_button_border_width"
+                android:color="?deputyTintPrimary" />
+            <corners android:radius="@dimen/ds_button_corner" />
+        </shape>
+    </item>
+</ripple>

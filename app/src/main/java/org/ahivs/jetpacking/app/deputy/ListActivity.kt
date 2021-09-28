@@ -21,7 +21,6 @@ import org.ahivs.jetpacking.app.theme.MyApplicationTheme
 class ListActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
             MyApplicationTheme {
                 MainContent() {

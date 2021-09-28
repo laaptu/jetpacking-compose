@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?selectableItemBackground"
+    android:gravity="center_vertical"
+    android:paddingStart="@dimen/input_chip_padding_start"
+    android:paddingTop="@dimen/input_chip_padding_top"
+    android:paddingEnd="@dimen/input_chip_padding_end"
+    android:paddingBottom="@dimen/input_chip_padding_bottom"
+    tools:parentTag="android.widget.LinearLayout"
+    >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/input_chip_icon_size"
+        android:layout_height="@dimen/input_chip_icon_size"
+        android:layout_marginEnd="4dp"
+        app:tint="@color/selectable_chip_icon_tint"
+        />
+
+    <TextView
+        android:id="@+id/main_text"
+        style="@style/DsTextAppearance.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?deputyTextPrimaryLabel"
+        tools:text="Chip text"
+        />
+
+    <ImageView
+        android:id="@+id/close_icon"
+        android:layout_width="@dimen/input_chip_icon_size"
+        android:layout_height="@dimen/input_chip_icon_size"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/ic_input_chip_close"
+        />
+</merge>

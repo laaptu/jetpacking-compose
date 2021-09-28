@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="deputy_calendar_weekday_label">
+        <item>@string/calendar_label_monday</item>
+        <item>@string/calendar_label_tuesday</item>
+        <item>@string/calendar_label_wednesday</item>
+        <item>@string/calendar_label_thursday</item>
+        <item>@string/calendar_label_friday</item>
+        <item>@string/calendar_label_saturday</item>
+        <item>@string/calendar_label_sunday</item>
+    </array>
+</resources>

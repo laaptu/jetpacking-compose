@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Button colors start-->
+    <color name="ds_white_button">@color/white</color>
+    <color name="ds_ghost_button">@color/transparent</color>
+    <color name="ds_social_button">@color/white</color>
+    <color name="ds_social_button_border">@color/ds_grey_light</color>
+    <color name="ds_ripple_effect">#42000000</color>
+
+    <!--Icon colors start-->
+    <color name="ds_light_gray_icon">@color/ds_grey_light</color>
+    <color name="ds_yellow_icon">@color/ds_amber</color>
+    <color name="ds_white_icon">@color/white</color>
+
+    <!--Text colors start-->
+    <color name="ds_white_text">@color/white</color>
+    <color name="ds_unselected_text">@color/ds_grey_medium</color>
+    <color name="ds_error_text">@color/ds_red</color>
+
+    <!--Toolbar colors start-->
+    <color name="ds_toolbar">@color/white</color>
+
+    <!--Progressbar colors start-->
+    <color name="ds_progress_bar_background">@color/ds_grey_light</color>
+
+    <!--Page indicator colors start-->
+    <color name="ds_page_indicator_selected_light">@color/white</color>
+    <color name="ds_page_indicator_unselected_light">@color/transparent_white</color>
+    <color name="ds_page_indicator_selected_dark">@color/ds_grey_dark</color>
+    <color name="ds_page_indicator_unselected_dark">@color/ds_grey_light</color>
+
+    <!-- MISC -->
+    <color name="ds_window_background">@color/white</color>
+    <color name="ds_add_shift_divider">@color/ds_light_light_gray</color>
+
+    <color name="ds_calendar_today_selection">@color/ds_grey_light</color>
+
+</resources>

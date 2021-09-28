@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/ic_retry"
+        android:width="@dimen/ds_retry_error_icon_size"
+        android:height="@dimen/ds_retry_error_icon_size"
+        />
+<!--    <item android:width="@dimen/ds_retry_error_icon_size">-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <solid android:color="#00ff00" />-->
+
+<!--            <padding-->
+<!--                android:left="@dimen/ds_retry_error_icon_size"-->
+<!--                android:right="20dp"-->
+<!--                ></padding>-->
+<!--        </shape>-->
+<!--    </item>-->
+
+</layer-list >
