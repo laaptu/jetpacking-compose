@@ -13,6 +13,18 @@
     <string name="cdr_close_pending_timesheet_screen">Press to close the pending timesheets screen</string>
     <string name="cancel">Cancel</string>
     <string name="approve">Approve %s</string>
+    <string name="cdr_approve">Click to Approve %s timesheets</string>
     <string name="cdr_select_all_of">Press to select all of %s</string>
     <string name="cdr_unselect_all_of">Press to unselect all of %s</string>
+    <string name="cdr_select_timesheet">Press to select timesheet</string>
+    <string name="cdr_unselect_timesheet">Press to unselect timesheet</string>
+
+    <string name="all_timesheets_approved">All timesheets approved</string>
+    <string name="could_not_load_timesheets">Could not load timesheets</string>
+    <string name="try_again">Try again</string>
+
+    <string name="pending_timesheets_partial_approved">Only %1$d timesheet was approved successfully from a total of %2$d.</string>
+
+
+
 </resources>

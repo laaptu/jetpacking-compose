@@ -39,7 +39,7 @@ object Type {
     )
     val headline = TextStyle(
         fontFamily = roboto,
-        fontWeight = FontWeight.W400,
+        fontWeight = FontWeight.W500,
         fontSize = 18.sp
     )
     val body1 = TextStyle(

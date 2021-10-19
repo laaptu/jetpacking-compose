@@ -8,7 +8,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontStyle
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
@@ -22,7 +21,6 @@ fun DeputyText(
     modifier: Modifier = Modifier,
     color: Color = DeputyTheme.colors.TextPrimaryLabel,
     fontStyle: FontStyle = FontStyle.Normal,
-    fontWeight: FontWeight? = null,
     letterSpacing: TextUnit = TextUnit.Unspecified,
     textDecoration: TextDecoration? = null,
     textAlign: TextAlign? = null,
@@ -38,7 +36,6 @@ fun DeputyText(
         modifier = modifier,
         color = color,
         fontStyle = fontStyle,
-        fontWeight = fontWeight,
         letterSpacing = letterSpacing,
         textDecoration = textDecoration,
         textAlign = textAlign,
